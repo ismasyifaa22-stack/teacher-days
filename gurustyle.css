@@ -1,0 +1,285 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff8fb;
+    color: #55434c;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px #f2dce6;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #d46b9c;
+}
+
+nav a {
+    text-decoration: none;
+    color: #765568;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e47aa9;
+}
+
+/* HOME */
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 40px;
+    background: linear-gradient(
+        120deg, #fff0f6, #ffffff
+    );
+}
+
+.home-text {
+    flex: 1;
+}
+
+.subtitle {
+    color: #d46b9c;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.home-text h1 {
+    font-size: 48px;
+    color: #c85c91;
+    margin-bottom: 10px;
+}
+
+.home-text h2 {
+    color: #d98aaf;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #d875a3;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #b94d80;
+}
+
+.home-image {
+    flex: 1;
+}
+
+.home-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #e8c8d7;
+}
+
+/* JUDUL SECTION */
+.judul {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.judul p {
+    color: #d875a3;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.judul h1 {
+    font-size: 34px;
+    color: #c85c91;
+    margin: 12px 0;
+}
+
+.judul span {
+    color: #806c77;
+    font-size: 14px;
+}
+
+/* GALERI */
+.galeri {
+    padding: 80px 8%;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #f0dce6;
+    transition: 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-card h3 {
+    color: #c85c91;
+    margin: 15px 0 8px;
+}
+
+.gallery-card p {
+    font-size: 13px;
+    color: #806c77;
+}
+
+/* PESAN */
+.pesan {
+    padding: 80px 8%;
+    background-color: #fff0f6;
+}
+
+.pesan-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pesan-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #efd8e3;
+    border-top: 4px solid #df8bb2;
+}
+
+.pesan-card h3 {
+    color: #c85c91;
+    margin-bottom: 15px;
+}
+
+.pesan-card p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.pesan-card h4 {
+    color: #d875a3;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* TENTANG */
+.tentang {
+    text-align: center;
+    padding: 90px 15%;
+}
+
+.tentang h1 {
+    color: #c85c91;
+    margin-bottom: 20px;
+}
+
+.tentang p {
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.tentang h2 {
+    color: #d875a3;
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #eeb4ce;
+    color: #70475c;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 34px;
+    }
+
+    .home-image img {
+        height: 250px;
+    }
+
+    .gallery-container,
+    .pesan-container {
+        grid-template-columns: 1fr;
+    }
+
+    .judul h1 {
+        font-size: 27px;
+    }
+
+    .tentang {
+        padding: 65px 8%;
+    }
+}
